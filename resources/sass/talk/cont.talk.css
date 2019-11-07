@@ -1,0 +1,374 @@
+/* 서브 톡톡 영역 */
+#sub_tab {clear:both; height:43px; background-color:#f7f7f7; border-bottom:solid 1px #adadad;}
+#sub_tab ul {padding:0 10px; text-align:center;}
+#sub_tab ul li {width:50%; float:left; height:36px; padding-top:6px;}
+#sub_tab .tab {font-size:1em; font-weight:bold; line-height:36px;}
+#sub_tab .tab a {color:#828282; display:block;}
+#sub_tab .on {border:solid 1px #adadad; background-color:#fff; border-bottom:solid 1px #fff;}
+#sub_tab .on a {color:#111;}
+#sub_tab .select {float:right; padding-top:7px;}
+#sub_tab .select select {width:85px;}
+
+/* 서브 톡톡 탭 small 영역 */
+.halfLeft{float:left;width:100%;}
+.halfLeft2{float:left;width:28%;}
+#sub_stab {clear:both;}
+#sub_stab ul {padding:0 0 0 2px; text-align:center;}
+#sub_stab ul li {width:20%; float:left; height:35px; padding-top:6px;}
+#sub_stab .tab {font-size:1em; font-weight:bold; line-height:35px;}
+#sub_stab .tab a {color:#828282; display:block;}
+#sub_stab .on {border-left:solid 1px #d4d4d4; border-top:solid 1px #d4d4d4; border-right:solid 1px #d4d4d4; background:#e6f1f6}
+#sub_stab .on a {color:#111;}
+#sub_stab .select {float:right; padding-top:7px;}
+#sub_stab .select select {width:85px;}
+
+/* 서브 톡톡 리스트영역 */
+#talkarea {clear:both;}
+#talkarea .titlewrap {padding:0 10px 0 0; height:41px}
+#talkarea .title {float:left; display:inline-block;margin-top:12px; font-size:1.125em; font-weight:bold; letter-spacing:-1px;}
+#talkarea .writeBtn { display:inline-block;float:right; margin-top:7px;text-align:center;padding:4px 4px 5px; font-size:1em;color:#fff; font-weight:bold;border-radius:4px; border:solid 1px #37a0b3;-webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.2),inset -1px -1px 0 rgba(255,255,255,0.2);box-shadow:inset 1px 1px 0 rgba(255,255,255,0.2),inset -1px -1px 0 rgba(255,255,255,0.2);background-color:#44d3e4;background-image:-webkit-gradient(linear,left top,left bottom,from(#44d3e4),to(#22bacc));background-image:-moz-linear-gradient(top,#44d3e4,#22bacc);background-image:-o-linear-gradient(top,#44d3e4,#22bacc);background-image:linear-gradient(to bottom,#44d3e4,#22bacc)}
+#talkarea .writeBtn img { vertical-align:middle; margin:-4px 2px 0 0}
+#talkarea .myActBtn {display:inline-block;float:right; border-radius:4px; margin:7px 5px 0 0; border:solid 1px #b6b6b6; font-size:0.8em; color:#666; font-weight:bold; padding:5px 10px; background-color:#fbfbfb;}
+#talkarea .myActBtn .arrow {position:relative; left:3px; top:2px; display:inline-block; width:8px; height:12px; background:url('http://image.club5678.com/imgs/mobile/130417/blt_arrow_org.png') no-repeat center; background-size:8px 12px;}
+/*
+#talkarea .talkrule {clear:both;display:block;height:12px; background:url('http://image.club5678.com/imgs/mobile/130417/bg_talk.gif') repeat; padding:9px 10px 15px; border-top:solid 1px #d4d4d4;border-bottom:solid 2px #c5d7df; font-size:1em; color:#444a56}
+#talkarea .talkrule img {vertical-align:middle; margin-right:4px;}
+#talkarea .talkrule span a{color:#406ca9;}
+*/
+
+#talkarea .talkrule {clear:both; display:block; height:12px; background:url('http://image.club5678.com/imgs/mobile/130417/bg_talk.gif') repeat; padding:9px 10px 15px; font-size:1em; color:#444a56}
+#talkarea .talkrule .notice_img {float:left;margin:-2px 5px 0 0;}
+#talkarea .talkrule .notice_txt {display:block; height:21px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-right:35px;}
+#talkarea .talkrule .ins_date {display:block; float:right; font-size:0.925em; line-height:0.925em; margin:-18px 3px 0 0}
+
+#noticeLay {position:relative;}
+#noticeLay .closeAct {position:absolute; top:0; right:5px; font-weight:bold;}
+
+#talklist_wrap {clear:both; background-color:#e6f1f6; border-top:solid 1px #c5d7df;}
+#talklist {border-top:solid 1px #f7fbfc; padding:0px 0px;}
+#talklist > ul {overflow:hidden;}
+#talklist ul li {position:relative;}
+#talklist li { padding:0; }
+#talklist li a {margin:10px 10px; display:block; padding:8px; overflow:hidden; border:solid 1px #c9d7de; border-radius:4px; box-shadow:1px 1px 2px #c9d7de;background-color:#fff;text-align:left;}
+#talklist li a.goldLine {margin:10px 10px; display:block; padding:8px; overflow:hidden; border:solid 2px #fdc557; border-radius:4px; box-shadow:1px 1px 2px #c9d7de;background-color:#fff;text-align:left;}
+
+#talklist li.help {text-align:center; color:#cacaca; padding:30px;}
+#talklist .photo {border-radius:4px; }
+#talklist .photoBox {float:left;display:block; overflow:hidden; width:55px; height:55px;border-radius:4px; border:1px solid #D8D8D8; }
+#talklist .photoBox img {transform:translate(0,0); backface-visibility:hidden; -webkit-transform:translate(0,0); -webkit-backface-visibility:hidden;}
+#talklist .writer {color:#354760; font-size:1.05em; font-weight:bold; position:absolute; top:11px; left:84px;}
+#talklist .contents {color:#747e8b; font-size:0.875em;  position:absolute; top:31px; left:84px; right:15px; height:35px; overflow:hidden;}
+#talklist .info {color:#ec4028; font-size:0.95em; position:absolute; top:10px; right:20px;}
+#talklist .info img {margin:2px 2px 0 0}
+#talklist .date {position:absolute; right:15px; padding-left:28px; font-size:0.95em; color:#b5b5b5;margin-top:40px; background:url('http://image.club5678.com/imgs/mobile/130417/shadow.png') repeat-y;}
+#talklist .date span {display:inline-block; text-indent:10px; padding-right:5px; background-color:#fff;}
+#talklist .todayBest {position:absolute;margin-left:-15px;margin-top:-15px;}
+
+/* 톡톡 상세보기 */
+#writer_profile {clear:both; padding:9px 10px 4px; height:55px;background-color:#ebf4f8;border-bottom:solid 1px #d6e5ec;}
+#writer_profile .photoBox {float:left;display:block; overflow:hidden; width:50px; height:50px;border-radius:4px; margin-right:7px; border:1px solid #cacaca;}
+#writer_profile  li {float:left;}
+#writer_profile .writer {font-size:1em; color:#666; line-height:130%; display:inline-block; padding-top:3px}
+#writer_profile .writer strong {font-size:1.05em; color:#111;}
+#writer_profile .info {float:right; border-left:solid 1px #d6e5ec; height:44px; width:30%; margin-top:2px; padding:3px 0 0 10px; color:#666; font-size:0.8em; line-height:130%; }
+#writer_profile .info strong {color:#ec4028;}
+#talk_view {padding:0 15px; position:relative; text-align:center;margin-top:15px;margin-bottom:15px}
+#talk_view .view_contents {padding:15px 0 20px; font-size:1em; border-bottom:solid 1px #e9e9e9; text-align:left;}
+#talk_view .view_btns {padding-top:15px;}
+#talk_view .view_btns a {display:inline-block; letter-spacing:-1px}
+#talk_view .view_talkPhoto img {max-width:100%;}
+#talk_view .actBtn {position:absolute; right:6px; margin-top:25px; }
+#talk_view .btn_r span{ border-radius:4px; margin-top:-3px; height:20; font-size:0.875em; line-height:20px; border:solid 1px #adadad; color:#666; font-weight:bold; padding:5px 8px; background-color:#fbfbfb; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ebebeb)); /*Safari*/ background: -webkit-linear-gradient(top, #fff, #ebebeb); /*WebKit nightly*/ background: -moz-linear-gradient(top, #fff, #ebebeb); /* Modzilla Firefox */ }
+.btn_skyblue {display:inline-block;border-radius:4px;padding:6px 10px 3px;margin-right:5px;height:21px;color:#666; font-size:1em; font-weight:bold;border:solid 1px #abbdd0; -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.3),inset -1px -1px 0 rgba(255,255,255,0.3);box-shadow:inset 1px 1px 0 rgba(255,255,255,0.3),inset -1px -1px 0 rgba(255,255,255,0.3);background-color:#f4fbff;background-image:-webkit-gradient(linear,left top,left bottom,from(#fafdff),to(#f4fbff));background-image:-moz-linear-gradient(top,#fafdff,#f4fbff);background-image:-o-linear-gradient(top,#fafdff,#f4fbff);background-image:linear-gradient(to bottom,#fafdff,#f4fbff)}
+.btn_skyblue img {vertical-align:middle; margin:0 2px 2px 0;}
+.btn_gry {display:inline-block;border-radius:4px;padding:6px 10px 3px;height:21px;border:solid 1px #adadad; color:#666; font-size:1em; font-weight:bold;  -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.3),inset -1px -1px 0 rgba(255,255,255,0.3);box-shadow:inset 1px 1px 0 rgba(255,255,255,0.3),inset -1px -1px 0 rgba(255,255,255,0.3);background-color:#f5f5f5;background-image:-webkit-gradient(linear,left top,left bottom,from(#fefefe),to(#ebebeb));background-image:-moz-linear-gradient(top,#fefefe,#ebebeb);background-image:-o-linear-gradient(top,#fefefe,#ebebeb);background-image:linear-gradient(to bottom,#fefefe,#ebebeb)}
+
+.btn_kakao {display:inline-block;border-radius:4px;padding:6px 10px 3px;margin-right:5px;height:21px;color:#666; font-size:1em; font-weight:bold; border:solid 1px #e1dc00; -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.3),inset -1px -1px 0 rgba(255,255,255,0.3);box-shadow:inset 1px 1px 0 rgba(255,255,255,0.3),inset -1px -1px 0 rgba(255,255,255,0.3);background-color:#fff714;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff714),to(#fff714));background-image:-moz-linear-gradient(top,#fff714,#fff714);background-image:-o-linear-gradient(top,#fff714,#fff714);background-image:linear-gradient(to bottom,#fff714,#fff714)}
+.btn_kakao img {vertical-align:middle; margin:0 2px 2px 0;}
+
+.btn_skyblue2 {display:inline-block;border-radius:4px;padding:6px 10px 3px;margin-right:5px;height:21px;color:#666; font-size:1em; font-weight:bold;border:solid 1px #abbdd0; -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.3),inset -1px -1px 0 rgba(255,255,255,0.3);box-shadow:inset 1px 1px 0 rgba(255,255,255,0.3),inset -1px -1px 0 rgba(255,255,255,0.3);background-color:#d9e5ff;background-image:-webkit-gradient(linear,left top,left bottom,from(#d9e1ff),to(#d9e5ff));background-image:-moz-linear-gradient(top,#d9e1ff,#d9e5ff);background-image:-o-linear-gradient(top,#d9e1ff,#d9e5ff);background-image:linear-gradient(to bottom,#d9e1ff,#d9e5ff)}
+.btn_skyblue2 img {vertical-align:middle; margin:0 2px 2px 0;}
+
+
+/* 댓글쓰기 영역 */
+#w_list {width:100%; clear:both;border-top:solid 1px #DBDBEB;margin-top:15px;}
+#w_list .tit {border-bottom:solid 1px #c6c6c6; color:#3a3a3b; font-size:0.8em; padding:10px 5px 11px 10px;}
+#w_list .tit img {vertical-align:middle; margin-top:-4px;}
+#w_list .tit strong {color:#ec4028;}
+#w_list .list {width:100%; background-color:#f9f9f9;}
+#w_list .list .no_tail {padding:15px; text-align:center; color:#cacaca;}
+#w_list .list .info {position:relative; display:block; overflow:hidden; padding:8px 12px 5px; font-size:0.875em; color:#111; font-weight:bold; border-top:solid 1px #e3e3e3; line-height:150%;}
+#w_list .list .info:first-child {border-top:0px;}
+#w_list .list .info .rightCon {position:relative; left:5px; overflow:hidden;}
+#w_list .list .info .rightCon .nick {font-size:1.125em;color:#111;}
+#w_list .list .info .rightCon .nickTag {font-size:0.795em;background:#efefef;color:#3c526a;border:1px solid #96bad0;padding:2px;margin:0 2px 0 2px;}
+#w_list .list .info .rightCon p {display:block; min-height:24px; color:#666}
+#w_list .list .info .rightCon p img {max-width:100%;}
+#w_list .list .info .rightCon em {float:right; display:block; font-size:0.8em; color:#444; }
+#w_list .list .info a {color:#666;}
+#w_list .list .info .thumb {overflow:hidden; width:38px; height:38px;border-radius:4px; float:left; margin-right:5px;}
+#w_list .list .secret_icon {position:relative; display:inline-block; top:1px}
+
+#w_list .w_form {position:relative; height:116px; clear:both; background-color:#f9f9f9; border-top:solid 1px #E4E4E4; border-bottom:solid 1px #c6c6c6; text-align:center;} /* [일감3322] 수정 */
+#w_list .w_form .comment {padding:10px;} /* [일감3322] 수정 */
+#w_list .w_form .comment  textarea{display:block; width:100%; border-radius:4px; overflow:hidden; border:solid 1px #b4b4b4; box-sizing:border-box; height:52px; padding:5px 5px 5px 43px; font-size:1em; background-color:#fff;}  /* [일감3322] 추가 */
+#w_list .actBtn {position:absolute; right:6px; margin-top:10px; }
+#w_list .btn_r span{ border-radius:4px; margin-top:-3px; height:20; font-size:0.875em; line-height:20px; border:solid 1px #adadad; color:#666; font-weight:bold; padding:5px 8px; background-color:#fbfbfb; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ebebeb)); /*Safari*/ background: -webkit-linear-gradient(top, #fff, #ebebeb); /*WebKit nightly*/ background: -moz-linear-gradient(top, #fff, #ebebeb); /* Modzilla Firefox */ }
+#w_list .w_form .btn_center {position:absolute; left:50%; margin:-1px 0 0 -39px;} /* [일감3322] 추가 */
+#w_list .w_form .btn_center span{display:inline-block; border-radius:4px; width:78px; height:28px; line-height:28px; text-align:center; border:solid 1px #adadad; color:#666; font-size:0.875em; font-weight:bold; background-color:#fbfbfb; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ebebeb)); /*Safari*/ background: -webkit-linear-gradient(top, #fff, #ebebeb); /*WebKit nightly*/ background: -moz-linear-gradient(top, #fff, #ebebeb); /* Modzilla Firefox */ } /* [일감3322] 추가 */
+#w_list .w_form .btn_emo {float:left; z-index:999; width:30px; height:30px; margin:-51px 0 0 16px;} /* [일감3322] 추가 */
+
+#tailMent .nickTag {font-size:0.795em;background:#efefef;color:#3c526a;border:1px solid #96bad0;padding:2px;margin:0 2px 0 2px;}
+#tailMent {display:block; width:100%; border-radius:4px; overflow:hidden; border:solid 1px #b4b4b4; height:40px; padding-top:5px; font-size:1em; background-color:#fff;}
+#tailMent {text-align:left;}
+
+#w_list .w_form .btn_r {float:right; margin-right:10px;}
+#w_list .w_form .btn_r span{border-radius:4px; height:20px; line-height:20px; border:solid 1px #adadad; color:#666; font-size:0.875em; font-weight:bold; padding:5px 8px; background-color:#fbfbfb; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ebebeb)); /*Safari*/ background: -webkit-linear-gradient(top, #fff, #ebebeb); /*WebKit nightly*/ background: -moz-linear-gradient(top, #fff, #ebebeb); /* Modzilla Firefox */ }
+
+/* 댓글 페이징 네비 */
+#commentList .page_nav2 {clear:both; background-color:#f9f9f9; border-top:solid 1px #fff; border-bottom:solid 1px #c6c6c6; text-align:center; font-size:1em; letter-spacing:-1px; line-height:normal; white-space:nowrap; padding:16px 0;}
+#commentList .now_p, .page_nav2 a {display:inline-block; color:#111; background:#FFF; text-decoration:none; width:23px; height:23px;vertical-align:middle; text-align:center; line-height:24px; margin:0 3px 0 0; border-radius:4px;}
+#commentList .page_nav2 .now_p { border:1px solid #f45304; color:#f45304; border-radius:4px;}
+#commentList .page_nav2 .numb { display:inline; margin:0 5px;}
+#commentList .page_nav2 .numb a {border:solid 1px #bebebe; background-color:#fff;}
+#commentList .prev2 {border-radius:4px; border:solid 1px #999; padding:0 4px; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ebebeb)); /*Safari*/ background: -webkit-linear-gradient(top, #fff, #ebebeb); /*WebKit nightly*/ background: -moz-linear-gradient(top, #fff, #ebebeb); /* Modzilla Firefox */ }
+#commentList .prev2 em { display:block; height:11px; margin:7px 0 0 7px; text-indent:-9999em; background:url('http://image.club5678.com/imgs/mobile/130417/btn_prev.png') no-repeat; }
+#commentList .next2 {border-radius:4px; border:solid 1px #999; padding:0 4px; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ebebeb)); /*Safari*/ background: -webkit-linear-gradient(top, #fff, #ebebeb); /*WebKit nightly*/ background: -moz-linear-gradient(top, #fff, #ebebeb); /* Modzilla Firefox */ }
+#commentList .next2 em { display:block; width:7px; height:11px; margin:7px 0 0 10px; text-indent:-9999em; background:url('http://image.club5678.com/imgs/mobile/130417/btn_next.png') no-repeat; }
+
+/* 톡톡 운영정책 팝업 보기 */
+#talk_rule {clear:both;}
+#talk_rule ul { padding:10px 0 0;width:100%;}
+#talk_rule .rulehelp {text-align:left;overflow-x:hidden;padding:10px 10px 20px}
+#talk_rule .rulehelp strong {color:#32b0c4}
+#talk_rule .ruleview {text-align:left;overflow-x:hidden;border-top:1px #c6c6c6 solid; background-color:#f6f6f6}
+#talk_rule .ruleview p { font-size:0.95em;padding:5px;margin:10px 10px 15px}
+#talk_rule .ruleview p .title { font-weight:bold;color:#db0101; display:block; padding:0 0 5px 0;}
+img.talkPolicyTitleImg {}
+
+/* 오늘의 톡 */
+#todayTalkDesc {clear:both;display:none;}
+
+/* 전체쪽지,멀티메시지 링크영역 */
+#itemArea {clear:both;}
+#itemArea .btnBg {background-color:#e6f1f6; height:40px; padding:8px 0 0; text-align:center;}
+#itemArea .btnBg .searchBtn {display:inline-block; border:solid 1px #78858e; border-radius:4px; background-color:#fff; height:30px; line-height:28px; margin-right:1px; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(40%, #ecf3f6)); /*Safari*/ background: -webkit-linear-gradient(top, #fff, #ecf3f6); /*WebKit nightly*/ background: -moz-linear-gradient(top, #fff, #ecf3f6); /* Modzilla Firefox */}
+#itemArea .btnBg .searchBtn a {display:block; padding:0 2px 0 8px; font-size:1em; font-weight:bold;letter-spacing:-1px;color:#de5400}
+#itemArea .btnBg .searchBtn img {margin:0 4px;}
+
+#mySubscribe {height:40px; padding:0 10px; border-bottom:1px #c5d7df solid;border-top:1px #c9d7de solid; background-color:#e6f1f6}
+#mySubscribe .subscribeicon {float:left;display:block;padding:10px 6px 0 0}
+#mySubscribe .countView {display:block;padding:10px 0 0 0;font-size:1.05em; font-weight:bold}
+#mySubscribe .countView b {color:#00b8c3}
+#mySubscribe .btns {display:block;margin-top:-24px}
+#mySubscribe .gryBtn {display:inline-block;float:right; margin-top:3px; margin-left:2px;text-align:center;padding:4px 6px 5px; font-size:0.875em;color:#444444; font-weight:bold;letter-spacing:-1px;text-align:center;border-radius:4px;border:solid 1px #adadad;-webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.7),inset -1px -1px 0 rgba(255,255,255,0.7);box-shadow:inset 1px 1px 0 rgba(255,255,255,0.7),inset -1px -1px 0 rgba(255,255,255,0.7);background-color:#fafafa;background-image:-webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#ebebeb));background-image:-moz-linear-gradient(top,#ffffff,#ebebeb);background-image:-o-linear-gradient(top,#ffffff,#ebebeb);background-image:linear-gradient(to bottom,#ffffff,#ebebeb)}
+
+#SubscribeList {clear:both;padding:6px 10px 5px 10px}
+#SubscribeList ul {position:relative;margin:7px 0;border:solid 1px #c9d7de; border-radius:4px;box-shadow:1px 1px 2px #c9d7de;background-color:#fff;text-align:left;}
+#SubscribeList li { padding:12px 15px 12px; border-bottom:1px #c9d7de solid}
+#SubscribeList .endLine {border-bottom:0}
+#SubscribeList .content { display:block; padding:0 0 10px 0}
+#SubscribeList .photoBoxList{clear:both; height:70px;}
+#SubscribeList .photoBox {float:left; display:block; overflow:hidden; width:55px; height:55px; border-radius:4px; border:1px solid #D8D8D8; padding:0 0 5px 0; margin-right:5px}
+#SubscribeList .photoBox img { margin-right:3px}
+#SubscribeList .writer {clear:both; display:inline-block;color:#354760;font-size:0.95em; letter-spacing:-1px;font-weight:bold; }
+#SubscribeList .writer b {color:#00b8c3;}
+#SubscribeList .writer img { vertical-align:top; margin-top:3px}
+#SubscribeList .date { display:inline-block; padding-left:5px; font-size:0.95em;color:#747e8b;}
+#SubscribeList .help {text-align:center; padding:25px 10px 30px; color:#666; font-weight:bold; letter-spacing:-1px; font-size:1em;}
+#SubscribeList .help img {padding-bottom:10px;}
+
+#moreView { position:relative; display:block;width:100%; background:#f7fcfe; text-align:center;border:1px #c9d8de solid;border-left:0; border-right:0}
+#moreView b { display:inline-block; padding:10px 0; color:#565858;font-size:1.125em}
+
+
+
+/* 상단 메뉴 및 서치 시작 */
+#menu_search { background:#c5cbe7;  clear:both; height:101px; position:relative; width:100%; }
+#menu_search .tab_menu { background:#c5cbe7; height:32px; width:75%; }
+#menu_search ul li { float:left; list-style:none; width:25%; }
+#menu_search .tab_on { background:#e6f1f6; border-left:2px solid #f3f8fb; border-right:2px solid #f3f8fb; border-top:2px solid #f3f8fb; border-top-right-radius:5px; color:#4b4bbb; display:block; font-size:1.0em; font-weight:bold; height:26px; line-height:26px; margin-top:5px; moz-border-top-right-radius:5xp; text-align:center; webkit-border-top-right-radius:5px; width:90%; }
+#menu_search .tab_off { background:#b1b3d2; border-left:2px solid #aaacca; border-right:2px solid #aaacca; border-top:2px solid #aaacca; border-top-right-radius:5px; color:#3e3e48; display:block; font-size:0.9em; height:25px; line-height:25px; margin-top:5px; moz-border-top-right-radius:5xp; text-align:center; webkit-border-top-right-radius:5px; width:90%; }
+#menu_search .btn_talk_wt { display:block; }
+
+#menu_search .btn_talk_wt img { margin-bottom:2px; margin-left:2px; margin-right:2px; vertical-align:middle; }
+#menu_search .btn_regist { display:block; position:absolute; right:6px; top:10px; }
+#menu_search .btn_regist a { background:#e6f1f6; border-radius:4px; border:1px solid #a9adcc; box-shadow:0 2px 0px #a9adcc; color:#757aa1; font-weight:bold; height:24px; padding:4px 6px; text-align:center; webkit-box-shadow:0 2px 0px #a9adcc; width:62px; }
+#menu_search .btn_refresh { display:block; position:absolute; right:15px; top:42px; }
+#menu_search .search_box { background:#e6f1f6;  border-top-right-radius:15px; clear:both; height:67px; position:relative; width:100%; }
+#menu_search .search_box .btn_serh { position:absolute; top:6px; left:11px; z-index:999; }
+#menu_search .search_box .btn_serh_text { position:absolute; top:6px; left:30px; z-index:999; color:#9b9ca7; font-size:14px; }
+#menu_search .search_box .search_bar { float:left; left:6px; position:absolute; top:3px; width:98%; }
+#menu_search .search_box .tftextinput { background:#e6f1f6; border:none; border-bottom:3px solid #a19fef; color:#9b9ca7; font-size:1.3em; padding:2px 3px; width:75%; }
+#menu_search .search_box .tfbutton { background-color:#dddff2; background-image:url(http://image.club5678.com/imgs/mobile/talkandtalk/img/btn_search.png); background-repeat:no-repeat; border:none; border-bottom:3px solid #a2aadd; height:19px; left:65%; padding-bottom:7px; position:absolute; top:2px; width:16px; }
+#menu_search .writeBtn { display:inline-block;float:right; margin-top:-27px;margin-right:10px;text-align:center;padding:3px 5px 4px; font-size:1em;color:#fff; font-weight:bold;border-radius:4px; border:solid 1px #37a0b3;-webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.2),inset -1px -1px 0 rgba(255,255,255,0.2);box-shadow:inset 1px 1px 0 rgba(255,255,255,0.2),inset -1px -1px 0 rgba(255,255,255,0.2);background-color:#44d3e4;background-image:-webkit-gradient(linear,left top,left bottom,from(#44d3e4),to(#22bacc));background-image:-moz-linear-gradient(top,#44d3e4,#22bacc);background-image:-o-linear-gradient(top,#44d3e4,#22bacc);background-image:linear-gradient(to bottom,#44d3e4,#22bacc)}
+#menu_search .writeBtn img { vertical-align:middle; margin:-4px 2px 0 0}
+.search_radio { background:#e6f1f6; clear:both; height:20px; margin-top:40px; width:90%; }
+.search_radio .search_all { color:#ff6c0a; font-size:1.3em; font-weight:bold; line-height:10px; }
+input[type=radio].search_r1 { border:0; clip:rect(0 0 0 0); height:1px; left:-1000px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; z-index:-1000; }
+input[type=radio].search_r1 + label.search_r1_label { background-position:0 0; background-repeat:no-repeat; display:inline-block; height:16px; line-height:16px; margin-left:12px; vertical-align:middle; }
+input[type=radio].search_r1:checked + label.search_r1_label { background-position:0 -16px; }
+label.search_r1_label { background-image:url(http://image.club5678.com/imgs/mobile/talkandtalk/img/check_radio_serch.png); }
+label.search_r1_label span { color:#565b1c; display:block; font-size:0.8em; font-weight:100; padding-left:25px; }
+label.search_r1_label .r_check { color:#6956ff; display:block; font-size:0.8em; font-weight:100; padding-left:22px; }
+.search_result { background:#eaecf5; clear:both; color:#737373; font-size:1.0em; height:39px; line-height:39px; text-align:center; width:100%; }
+.search_result span { font-weight:bold; }
+/* 끝 */
+
+
+/* 톡 리스트 시작 */
+#talk_list { clear:both; height:auto; overflow-y:hidden; position:relative; width:100%; }
+#talk_list ul { list-style:none; }
+
+/*
+#talk_list .talk_list_box { background:#fff; border-bottom:1px solid #eaecf5; height:84px; position:relative; width:100%; padding-bottom:4px;}
+*/
+#talk_list .talk_list_box {clear:both;position:relative;background:#fff;border:1px solid #c7c9d5;overflow:hidden;border-radius:5px;width:96%;margin:8px auto;padding:0 0 20px 0}
+#talk_list .talk_list_box .talk_group_mark { background-image:url(http://image.club5678.com/imgs/mobile/talkandtalk/img/talk_mark.png); background-repeat:no-repeat; color:#7a7fa6; display:block; font-size:0.8em; height:16px; line-height:16px; position:absolute; text-align:center; top:5px; width:33px; }
+.selling_text { color:#a46dff; display:inline-block; font-size:0.8em; font-weight:bold; margin-left:38px; margin-top:4px; }
+.buying_text { color:#43afec; display:inline-block; font-size:0.8em; font-weight:bold; margin-left:38px; margin-top:4px; }
+.ending_text { color:#a7a7a7; display:inline-block; font-size:0.8em; font-weight:bold; margin-left:38px; margin-top:4px; }
+#talk_list .talk_list_box .ico_photo { background-image:url(http://image.club5678.com/imgs/mobile/talkandtalk/img/ico_photo.png); background-repeat:no-repeat; display:block; height:11px; position:absolute; right:35%; top:10px; width:13px; }
+#talk_list .talk_list_box .ico_photo span { color:#e85700; font-size:0.8em; margin-left:18px; position:absolute; text-align:left; top:-3px; }
+#talk_list .talk_list_box .ico_like { background-image:url(http://image.club5678.com/imgs/mobile/talkandtalk/img/ico_like.png); background-repeat:no-repeat; display:block; height:13px; position:absolute; right:21%; top:8px; width:13px; }
+#talk_list .talk_list_box .ico_like span { color:#e85700; font-size:0.8em; margin-left:18px; position:absolute; text-align:left; top:-1px; }
+#talk_list .talk_list_box .ico_msg { background-image:url(http://image.club5678.com/imgs/mobile/talkandtalk/img/ico_msg.png); background-repeat:no-repeat; display:block; height:13px; position:absolute; right:8%; top:8px; width:14px; }
+#talk_list .talk_list_box .ico_msg span { color:#e85700; font-size:0.8em; margin-left:18px; position:absolute; text-align:left; top:-1px; }
+#talk_list .talk_list_box .photo_area { overflow:hidden; border:3px solid #e3e4f0; display:block; height:37px; margin-left:7px; margin-top:10px; width:56px; }
+#talk_list .talk_list_box .photo_area span { color:#b8b8b8; display:inline-block; font-size:0.8em; padding-left:2px; padding-top:8px; }
+#talk_list .talk_list_box .photo_area img {transform:translate(0,0); backface-visibility:hidden; -webkit-transform:translate(0,0); -webkit-backface-visibility:hidden;}
+.talk_text { color:#3d3f4e; font-size:1.0em; height:auto; left:77px; position:absolute; top:30px; width:70%; word-break:break-all;}
+.talk_text img { padding-left:5px; vertical-align:middle; }
+.talk_id { color:#777a93; font-size:0.9em; height:auto; left:80px; position:absolute; top:66px; width:70%; }
+.talk_time { color:#b5b6c4; text-align:left;}
+/*리스트 끝 */
+
+/* 검색 상품 없을때 시작 */
+.search_none { background:#eaecf5; clear:both; height:auto; width:100%; }
+.search_none img { display:block; margin:0 auto; padding-bottom:30px; padding-top:30px; text-align:center; }
+/* 끝 */
+
+/* 톡쓰기  시작 */
+#sub_bottom { clear:both; }
+#sub_bottom .talk_group { background:#FFF; border-bottom:1px solid #dcdde6; height:42px; width:100%; }
+#sub_bottom .talk_group .talk_l { color:#ff6c0a; font-size:1.3em; font-weight:bold; line-height:42px; margin-left:13px; }
+input[type=radio].talk_radio { border:0; clip:rect(0 0 0 0); height:1px; left:-1000px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; z-index:-1000; }
+input[type=radio].talk_radio + label.talk_radio_label { background-position:0 0; background-repeat:no-repeat; display:inline-block; height:18px; line-height:18px; margin-left:50px; vertical-align:middle; }
+input[type=radio].talk_radio:checked + label.talk_radio_label { background-position:0 -18px; }
+label.talk_radio_label { background-image:url(http://image.club5678.com/imgs/mobile/talkandtalk/img/check_radio_wt.png); }
+label.talk_radio_label span { color:#565b1c; display:block; font-size:0.9em; font-weight:100; padding-left:26px; }
+.call_area { background:#eaecf5; border-bottom:1px solid #dcdde6; height:auto; width:100%; }
+.call_area .contact { color:#63637a; display:block; font-size:1.125em; margin-left:15px; padding-top:11px; }
+.call_area .contact img { margin-bottom:2px; vertical-align:middle; }
+.call_area .p_text { background:#fcfcfe; border:none; border-radius:3px; color:#afafaf; display:inline-block; height:21px; line-height:21px; margin-left:11px; overflow:hidden; padding:2px; vertical-align:middle; width:60%; }
+.selling_radio { font-size:1.250em; font-weight:bold; padding-bottom:6px; padding-top:8px; }
+input[type=radio].sell_radio { border:0; clip:rect(0 0 0 0); height:1px; left:-1000px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; z-index:-1000; }
+input[type=radio].sell_radio + label.sell_radio_label { background-position:0 0; background-repeat:no-repeat; display:inline-block; height:22px; margin-left:12px; vertical-align:middle; }
+input[type=radio].sell_radio:checked + label.sell_radio_label { background-position:0 -22px; }
+label.sell_radio_label { background-image:url(http://image.club5678.com/imgs/mobile/talkandtalk/img/check_radio_mk.png); }
+label.sell_radio_label .selling { color:#6a56ff; display:block; font-size:1.2em; padding-left:26px; padding-top:1px; }
+label.sell_radio_label .buying { color:#9395a6; display:block; font-size:1.2em; padding-left:26px; padding-top:1px; }
+.frm { background:#fcfcfe; border:none; clear:both; height:180px; ms-box-shadow:0 5px 6px -6px #c3c4cc; position:relative; webkit-box-shadow:0 5px 6px -6px #c3c4cc; width:100%; }
+.frm textarea { background:#fcfcfe; border:none; color:#434343; font-size:1.2em; height:160px; overflow:hidden; padding:10px 3% 10px 3%; width:94%; }
+.frm .placeholder_01 { color:#afafaf; display:block; font-size:1.2em; left:15px; position:absolute; top:14px; }
+.frm .placeholder_02 { color:#838591; display:block; font-size:0.8em; left:15px; line-height:14px; position:absolute; top:41px; word-wrap:break-word; }
+.frm .placeholder_01 img { margin-bottom:2px; vertical-align:middle; }
+.photo_register { background:#eaecf5; clear:both; height:auto; width:100%; }
+.photo_register .photo_r { background-image:url(http://image.club5678.com/imgs/mobile/talkandtalk/img/photo_select.png) no-repeat 0 0; height:109px; width:139px; }
+.photo_register .photo_r img { display:block; margin:0 auto; padding-bottom:9px; padding-top:7px; }
+.photo_register .photo_r_ment { background:#e1e3ef; height:auto; width:100%; }
+.photo_register .photo_r_ment .ment_01 { color:#fd2525; font-size:1.25em; padding-bottom:5px; padding-top:7px; text-align:center; }
+.photo_register .photo_r_ment .under_line { background:#eba2aa; display:block; height:1px; margin:0 auto; margin-bottom:2px; margin-top:2px; width:180px; }
+.photo_register .photo_r_ment .ment_02 { color:#616371; display:block; padding-bottom:8px; text-align:center; }
+.photo_register .photo_r_ment .ment_02 span { font-weight:bold; }
+.photo_register .btnwrap {text-align:center; padding:17px 10px; border-bottom:1px #c5d7df solid}
+.photo_register .appBtn {display:inline-block; border-radius:4px; padding:10px 25px 8px;width:60%;font-size:1.2em; font-weight:bold; letter-spacing:-1px; border:solid 2px #adadad;  -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.2),inset -1px -1px 0 rgba(255,255,255,0.2);box-shadow:inset 1px 1px 0 rgba(255,255,255,0.2),inset -1px -1px 0 rgba(255,255,255,0.2);background-color:#f5f5f5;background-image:-webkit-gradient(linear,left top,left bottom,from(#fefefe),to(#ececec));background-image:-moz-linear-gradient(top,#fefefe,#ececec);background-image:-o-linear-gradient(top,#fefefe,#ececec);background-image:linear-gradient(to bottom,#fefefe,#ececec) }
+.photo_register .appBtn img { vertical-align:middle ; margin:0 5px 0 0;}
+.photo_register .apphelp {display:block; padding-top:10px; letter-spacing:-1px;font-size:1em}
+.photo_register .apphelp strong{color:#f9331f}
+.btn_area { background:#FFF; border-bottom:1px solid #d2d2db; clear:both; float:left; height:auto; width:100%; }
+.btn_area .btn_regi { float:right; }
+.btn_area .btn_regi a { background:#c9cad1; border-radius:5px; color:#a8a9b2; display:inline-block; font-size:1.5em; font-weight:bold; margin:7px 10px 7px 0px; padding:12px 50px; }
+.btn_area .btn_regi_on { float:right; }
+.btn_area .btn_regi_on a { background:#fe6613; border-radius:5px; color:#fff; display:inline-block; font-size:1.5em; font-weight:bold; margin:7px 10px 7px 0px; padding:12px 50px; }
+.btn_area .btn_cancel { float:left; }
+.btn_area .btn_cancel a { background:#babbbf; border-radius:5px; color:#7f8087; display:inline-block; font-size:1.5em; font-weight:bold; margin:7px 0px 7px 10px; padding:12px 50px; }
+.photo_row { clear:both; height:auto; overflow-y:hidden; width:100%; }
+.photo_row ul { }
+.photo_row ul li { background:#d5d7e8; border-bottom:1px solid #eaecf5; height:65px; list-style:none; position:relative; width:100%; }
+.photo_row ul li .list_num { color:#616371; font-size:1.0em; left:10px; position:absolute; top:27px; }
+.photo_row ul li .photo_box_l { background:#fff; display:inline-block; height:53px; line-height:53px; margin-left:33px; margin-top:6px; width:78px; }
+.photo_row ul li .photo_box_l .p_more { display:block; padding-left:14px; padding-top:9px; }
+.photo_row ul li .photo_box_l .p_regi { display:block; height:49px; padding-left:3px; padding-top:3px; width:72px; }
+.photo_row ul li .pbox_text01 { color:#616371; font-size:1.0em; left:124px; position:absolute; top:27px; }
+.photo_row ul li .list_x { background-image:url(http://image.club5678.com/imgs/mobile/130417/btn_del3.png); background-size:14px; background-repeat:no-repeat; display:block; height:14px; position:absolute; right:19px; top:28px; width:14px; }
+/* 끝 */
+
+
+/* 장터톡 상세화면 시작 */
+#talk_detail_wrap { background:#fff; clear:both; height:auto; width:100%; }
+.talk_detail_text { background:#fcfcfe; border-bottom:1px solid #dcdde6; clear:both; height:78px; position:relative; width:100%; }
+.talk_detail_text .photo { overflow:hidden; background:#eaecf5; border:1px solid #d0d1d8; border-radius:3px; display:block; height:54px; left:9px; position:absolute; top:12px; width:54px; }
+.talk_detail_text .photo img {transform:translate(0,0); backface-visibility:hidden; -webkit-transform:translate(0,0); -webkit-backface-visibility:hidden;}
+.talk_detail_text .f_text { left:25%; position:absolute; top:12px; }
+.talk_detail_text .f_text .ud_bar { background:#dcdde8; height:2px; width:15px; }
+.talk_detail_text .f_text .id { color:#777a93; font-size:1.0em; font-weight:bold; padding-top:2px; }
+.talk_detail_text .f_text .state { color:#777a93; font-size:0.9em; padding-top:2px; }
+.talk_detail_text .f_text .state span { margin-left:2px; }
+.talk_detail_text .f_text .state img { margin-bottom:1px; vertical-align:middle; }
+.talk_detail_text .f_text .gps { color:#777a93; font-size:0.9em; padding-top:2px; }
+.talk_detail_text .f_text .gps span { margin-left:2px;color:#e85700; }
+.talk_detail_text .f_text .gps img { margin-bottom:1px; vertical-align:middle; }
+.talk_detail_text .s_text { left:68%; position:absolute; top:17px; }
+.talk_detail_text .s_text .hit { color:#74757f; font-size:1.0em; }
+.talk_detail_text .s_text .hit span { color:#e85700; padding-left:5px; text-align:left; }
+.talk_detail_text .s_text .like { color:#74757f; font-size:1.0em; padding-top:2px; }
+.talk_detail_text .s_text .like span { color:#e85700; padding-left:5px; text-align:left; }
+.talk_detail_text .s_text .date { color:#9fa0aa; font-size:0.8em; padding-top:2px; }
+.talk_detail_text .s_text .date span { color:#9fa0aa; padding-left:5px; text-align:left; }
+/* 상세 화면 시작 */
+.talk_detail_wt { clear:both; height:auto; width:100%; }
+.talk_detail_wt .photo img { display:block; margin:0 auto; margin-top:10px; max-height:100%; max-width:90%; padding-bottom:10px; }
+.talk_detail_wt .talk_content { color:#434343; height:auto; margin:0 auto; padding-bottom:20px; padding-top:10px; width:90%; word-break:break-all; }
+/* 상세화면 버튼들 */
+.talk_detail_wt .talk_btn { clear:both; height:30px; padding-bottom:10px; width:100%; padding-top:10px;}
+.talk_detail_wt .talk_btn .kakao { background:#fae100; border-radius:3px; color:#3b1e1e; display:block; float:left; font-size:0.9em; height:30px; letter-spacing:-1px; line-height:27px; margin-bottom:10px; margin-left:5%; margin-right:5%; text-align:center; width:43%; padding-top:3px; }
+.talk_detail_wt .talk_btn .kakao img { margin-bottom:3px; margin-right:4px; vertical-align:middle; }/* 거래완료전 카카오알리기 */
+.talk_detail_wt .talk_btn .kakao_off { background:#ededed; border-radius:3px; color:#bebebe; display:block; float:left; font-size:0.9em; height:30px; letter-spacing:-1px; line-height:27px; margin-bottom:10px; margin-left:5%; margin-right:5%; text-align:center; width:43%; padding-top:3px; }
+.talk_detail_wt .talk_btn .kakao_off img { margin-bottom:3px; margin-right:4px; vertical-align:middle; }/* 거래완료후 카카오알리기 */
+.talk_detail_wt .talk_btn .list { background:#d9d9e1; border-radius:3px; color:#807f8f; display:block; float:left; font-size:0.9em; height:30px; letter-spacing:-1px; line-height:27px; margin-bottom:10px; margin-right:5%; text-align:center; width:42%; padding-top:3px; }
+.talk_detail_wt .talk_btn .list2 { background:#d9d9e1; border-radius:3px; color:#807f8f; display:block; float:left; font-size:0.9em; height:30px; letter-spacing:-1px; line-height:27px; margin-left:5%; margin-bottom:10px; text-align:center; width:90%; padding-top:3px; }
+
+.end_btn { height:auto; margin:0 auto; width:100%;}
+.talk_basic_btn { background:-webkit-gradient(linear, left top, left bottom, color-stop(10%,#ffffff), color-stop(100%,#f7f7f8)); border:1px solid #b4b4c8; border-radius:3px; color:#7f7f96 !important; display:block; font-weight:bold; line-height:25px; margin-top:7px; text-align:center; }
+.modify { float:left; height:28px; margin-left:5%; margin-right:2%; width:20%; margin-top:5px;padding-top:3px;}
+.delete { float:left; height:28px; width:43%;margin-top:5px; margin-left:5%;padding-top:3px;}
+.completion { float:right; height:28px; width:42%; margin-right:5%;margin-top:5px;padding-top:3px;}
+
+.reco { float:left; height:28px; width:28%;margin-top:5px;margin-bottom:12px;padding-top:3px;  }
+.take { float:left; height:28px; width:28%; margin-left:5%; margin-right:1.8%;margin-top:5px;padding-top:3px; }
+.frnd { float:right; height:28px; width:29%; margin-right:5%;margin-top:5px;padding-top:3px;  }
+
+.reco2 { float:left; height:28px; width:21%;margin-top:5px;margin-bottom:12px;padding-top:3px;  }
+.take2 { float:left; height:28px; width:21%; margin-left:5%; margin-right:1.4%;margin-top:5px;padding-top:3px; }
+.frnd2 { float:left; height:28px; width:21%; margin-left:1.4%; margin-top:5px; padding-top:3px;  }
+.repp2 { float:right; height:28px; width:21%; margin-right:5%; margin-top:5px; padding-top:3px;  }
+
+.delete1 { margin:0 auto; height:28px; width:90%;margin-top:5px;padding-top:3px;}
+
+
+
+.end_btn p { clear:both; color:#7e7e7e; font-size:0.8em; letter-spacing:-1px; padding-bottom:7px; padding-top:10px; text-align:center; }
+.end_btn .end_text { clear:both; color:red; font-size:1.0em; letter-spacing:-1px;  padding-top:10px; text-align:center;margin-top:12px }
+.end_btn p a { color:#7e7e7e; font-weight:bold; text-decoration:underline; }
+/* 장터톡 상세 끝 */
+
+/* photo layer */
+#popQmeetBg {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:1001}
+#popQmeetUpload {display:none;position:absolute;top:50%;left:50%;margin-top:-105px;margin-left:-150px;width:300px;height:140px;border-radius:5px;background:#fff;z-index:1002;overflow:hidden}
+#popQmeetUpload ul {margin:0;padding:0;list-style:none}
+#popQmeetUpload li {line-height:70px;height:70px;border-bottom:1px solid #f3f3f3;font-size:1.25em}
+#popQmeetUpload li a {display:block;width:100%;height:100%}
+#popQmeetUpload li img {vertical-align:middle;margin:0 15px}
+
+#notice_vticker {overflow: hidden; position: relative; height: 21px;}

@@ -1,0 +1,180 @@
+/*================================== 헤더영역 ==================================*/
+#wrap_head  {position:relative; width:100%; height:68px;}
+@media(max-width:360px){
+	#wrap_head{height:66px;}
+}
+
+/*-------- 확장메뉴 삼선아이콘 --------*/
+#wrap_head a.btn_mymenu {display:inline-block; position:absolute; top:0; left:0; width:49px; height:43px; background:url(http://image.club5678.com/imgs/mobile/170406/hamburg-btn.png) no-repeat 11px 13px; background-size:25px 17px;}
+#wrap_head a:active.btn_mymenu {background:#f5f5f5 url('http://image.club5678.com/imgs/mobile/170406/hamburg-btn.png') no-repeat 11px 13px; background-size:25px 17px;}
+#wrap_head a.btn_mymenu .badge {display:inline-block; position:absolute; top:0; right:0; width:23px; height:23px; margin:2px 1px 0 0; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; border-radius:50%; box-shadow:0 0 0 1px #fff; background-image:-webkit-linear-gradient(linear, left, from(#ff002a), to(#ff3c00)); background-image:-moz-linear-gradient(left,#ff002a,#ff3c00); background-image:-o-linear-gradient(left,#ff002a,#ff3c00); background-image:linear-gradient(to right,#ff002a,#ff3c00); background-color:#ff3c00; font-size:13px; color:#fff; text-align:center; letter-spacing:-0.5px; line-height:23px;}
+/*-------------------------------------*/
+
+/*---------- Club5678 로고 ---------- */
+#wrap_head a.logo {display: block; height: 40px; line-height: 40px; text-align: center;}
+#wrap_head a.logo img {vertical-align:middle;}
+/*----------------------------------- */
+
+#ioStatus {position:absolute; top:5px; left:115px}
+
+#wrap_head .head_btns {position:absolute; top:8px; right:6px;}
+#wrap_head .head_btns li{float:left;margin-left:3px}
+#wrap_head .head_btns img {vertical-align:middle; margin-bottom:2px;margin-right:2px}
+#wrap_head .head_btns .bt {display:inline-block; padding-right:10px; padding-left:10px; height:28px;line-height:28px; text-decoration:none; font-size:0.875em; color:#111; letter-spacing:-1px;text-align:center;border-radius:3px;border:solid 1px #adadad;-webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.7),inset -1px -1px 0 rgba(255,255,255,0.7);box-shadow:inset 1px 1px 0 rgba(255,255,255,0.7),inset -1px -1px 0 rgba(255,255,255,0.7);background-color:#fafafa;background-image:-webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#ebebeb));background-image:-moz-linear-gradient(top,#ffffff,#ebebeb);background-image:-o-linear-gradient(top,#ffffff,#ebebeb);background-image:linear-gradient(to bottom,#ffffff,#ebebeb)}
+
+/*--- 톡&톡,음악방송,웹툰,결혼재혼,동영상Show 링크 ---*/
+#wrap_head .hd_nav {position:absolute; bottom:2.5px; width:100%; height:23px;}
+.hd_nav .talkandtalk,
+.hd_nav .musicbroadcast,
+.hd_nav .webtoon,
+.hd_nav .wedding,
+.hd_nav .videoshow {position:relative; float:right; width:auto; height:23px; margin:0 6px 0 0; background-repeat:no-repeat; background-position:left center;}
+.hd_nav .talkandtalk {background-image:url('http://image.club5678.com/imgs/mobile/190322/nav_ico_talkandtalk.png'); background-size:16px 17px;}
+.hd_nav .musicbroadcast {background-image:url('http://image.club5678.com/imgs/mobile/190322/nav_ico_musicbroadcast.png'); background-size:17px;}
+.hd_nav .webtoon {background-image:url('http://image.club5678.com/imgs/mobile/190322/nav_ico_webtoon.png'); background-size:16px 17px;}
+.hd_nav .wedding {background-image:url('http://image.club5678.com/imgs/mobile/190322/nav_ico_wedding.png'); background-size:16px 17px;}
+.hd_nav .videoshow {background-image:url('http://image.club5678.com/imgs/mobile/190322/nav_ico_videoshow.gif'); background-size:18px 17px;}
+.hd_nav .talkandtalk .txt,
+.hd_nav .musicbroadcast .txt,
+.hd_nav .webtoon .txt,
+.hd_nav .wedding .txt,
+.hd_nav .videoshow .txt {font-size:14px; font-weight:bold; color:#4c4c4c; letter-spacing:-2px; line-height:23px;}
+.hd_nav .talkandtalk .txt {padding:0 0 0 17px;}
+.hd_nav .musicbroadcast .txt {padding:0 0 0 18px;}
+.hd_nav .webtoon .txt {padding:0 0 0 17px;}
+.hd_nav .wedding .txt {padding:0 0 0 17px;}
+.hd_nav .videoshow .txt {padding:0 0 0 19px;}
+.hd_nav .off {display:none;}
+@media screen and (max-width:359px){
+	#wrap_head .hd_nav {bottom:3px; height:21px;}
+	.hd_nav .talkandtalk,
+	.hd_nav .musicbroadcast,
+	.hd_nav .webtoon,
+	.hd_nav .wedding,
+	.hd_nav .videoshow {height:21px; margin:0 6px 0 0;}
+	.hd_nav .talkandtalk {background-size:14px 15px;}
+	.hd_nav .musicbroadcast {background-size:15px;}
+	.hd_nav .webtoon {background-size:14px 15px;}
+	.hd_nav .wedding {background-size:14px 15px;}
+	.hd_nav .videoshow {background-size:16px 15px;}
+	.hd_nav .talkandtalk .txt,
+	.hd_nav .musicbroadcast .txt,
+	.hd_nav .webtoon .txt,
+	.hd_nav .wedding .txt,
+	.hd_nav .videoshow .txt {font-size:13px; line-height:21px;}
+	.hd_nav .talkandtalk .txt {padding:0 0 0 14px;}
+	.hd_nav .musicbroadcast .txt {padding:0 0 0 15px;}
+	.hd_nav .webtoon .txt {padding:0 0 0 14px;}
+	.hd_nav .wedding .txt {padding:0 0 0 14px;}
+	.hd_nav .videoshow .txt {padding:0 0 0 16px;}
+}
+@media screen and (min-width:414px){
+	#wrap_head .hd_nav {bottom:3px; height:23px;}
+	.hd_nav .talkandtalk,
+	.hd_nav .musicbroadcast,
+	.hd_nav .webtoon,
+	.hd_nav .wedding,
+	.hd_nav .videoshow {height:23px; margin:0 8px 0 0;}
+	.hd_nav .talkandtalk {background-size:18px 19px;}
+	.hd_nav .musicbroadcast {background-size:19px;}
+	.hd_nav .webtoon {background-size:18px 19px;}
+	.hd_nav .wedding {background-size:18px 19px;}
+	.hd_nav .videoshow {background-size:20px 19px;}
+	.hd_nav .talkandtalk .txt,
+	.hd_nav .musicbroadcast .txt,
+	.hd_nav .webtoon .txt,
+	.hd_nav .wedding .txt,
+	.hd_nav .videoshow .txt {font-size:14.5px; line-height:23px;}
+	.hd_nav .talkandtalk .txt {padding:0 0 0 19px;}
+	.hd_nav .musicbroadcast .txt {padding:0 0 0 20px;}
+	.hd_nav .webtoon .txt {padding:0 0 0 19px;}
+	.hd_nav .wedding .txt {padding:0 0 0 19px;}
+	.hd_nav .videoshow .txt {padding:0 0 0 21px;}
+}
+/*----------------------------------------------------*/
+
+/*---------------------------- 대메뉴 ----------------------------*/
+.main_menu {width:100%; height:50px; background-color:#cb0000; text-align:center;}
+.main_menu li {float:left; width:20%; height:50px; position:relative; text-align:center;}
+.main_menu li a {display:block; border:none; height:42px; color:#fff; padding-top:8px; font-size:0.875em; letter-spacing:-1px;}
+.main_menu span {position:absolute; top:-27px; left:-10px;}
+.main_menu .on {background-color:#202020; padding-top:-1px;}
+.main_menu .on a {color:#ff001e;}
+	/*------- 노랑뱃지 -------*/
+	.main_menu .main-badge-img,
+	.main_menu .main-badge-img_pressed {position:absolute; z-index:10; top:50%; left:50%; width:25px; height:25px; margin:-16px 0 0 11px; padding:0; background-repeat:no-repeat; background-position:left top; background-size:cover;}
+	.main_menu .main-badge-img {background-image:url('http://image.club5678.com/imgs/mobile/170417/m_main-badge_2.png');}
+	.main_menu .main-badge-img_pressed {background-image:url('http://image.club5678.com/imgs/mobile/170417/m_main-badge_pressed_2.png');}
+	.main_menu .main-badge-img .n-or-number,
+	.main_menu .main-badge-img_pressed .n-or-number {position:absolute; top:0; width:25px; height:25px; margin:0; padding:0; font-size:13px; font-weight:bold; color:#222; text-align:center; line-height:25px; letter-spacing:-0.5px; text-transform:uppercase;}
+	/*------------------------*/
+ /*--- 아이콘 포함한 bg이미지 ---*/
+.main_menu .menu01,
+.main_menu .menu02,
+.main_menu .menu03,
+.main_menu .menu04,
+.main_menu .menu05,
+.main_menu .menu06,
+.main_menu .menu07,
+.main_menu .menu08,
+.main_menu .menu01_on,
+.main_menu .menu02_on,
+.main_menu .menu03_on,
+.main_menu .menu04_on,
+.main_menu .menu05_on,
+.main_menu .menu06_on,
+.main_menu .menu07_on,
+.main_menu .menu08_on {position:relative; background-repeat:no-repeat; background-position:center; background-size:58px 36px;}
+.main_menu .menu01 {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu01_bg.png');}
+.main_menu .menu02 {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu02_bg.png');}
+.main_menu .menu03 {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu03_bg.png');}
+.main_menu .menu04 {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu04_bg.png');}
+.main_menu .menu05 {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu05_bg.png');}
+.main_menu .menu06 {background-image:url('http://image.club5678.com/imgs/mobile/180305/menu06_bg_2.png');}
+.main_menu .menu07 {background-image:url('http://image.club5678.com/imgs/mobile/171101/ico_menu03_re.png');}
+.main_menu .menu08 {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu08_bg.png');}
+.main_menu .menu01_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu01_bg_on.png');}
+.main_menu .menu02_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu02_bg_on.png');}
+.main_menu .menu03_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu03_bg_on.png');}
+.main_menu .menu04_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu04_bg_on.png');}
+.main_menu .menu05_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu05_bg_on.png');}
+.main_menu .menu06_on {background-image:url('http://image.club5678.com/imgs/mobile/180305/menu06_bg_2_on.png');}
+.main_menu .menu07_on {background-image:url('http://image.club5678.com/imgs/mobile/171101/ico_menu03_on_re.png');}
+.main_menu .menu08_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu08_bg_on.png');}
+ /*------------------------------*/
+ /*--- 제목 텍스트이미지 ---*/
+.main_menu .menu01 .menu01_title,
+.main_menu .menu02 .menu02_title,
+.main_menu .menu03 .menu03_title,
+.main_menu .menu04 .menu04_title,
+.main_menu .menu05 .menu05_title,
+.main_menu .menu06 .menu06_title,
+.main_menu .menu07 .menu07_title,
+.main_menu .menu08 .menu08_title,
+.main_menu .menu01_on .menu01_title_on,
+.main_menu .menu02_on .menu02_title_on,
+.main_menu .menu03_on .menu03_title_on,
+.main_menu .menu04_on .menu04_title_on,
+.main_menu .menu05_on .menu05_title_on,
+.main_menu .menu06_on .menu06_title_on,
+.main_menu .menu07_on .menu07_title_on,
+.main_menu .menu08_on .menu08_title_on {display:inline-block;position:absolute;z-index:20;left:50%;bottom:6px;width:62px;height:18px;margin-left:-31px; background-repeat:no-repeat; background-position:left top; background-size:cover;}
+.main_menu .menu01 .menu01_title {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu01_title.png');}
+.main_menu .menu02 .menu02_title {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu02_title.png');}
+.main_menu .menu03 .menu03_title {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu03_title.png');}
+.main_menu .menu04 .menu04_title {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu04_title.png');}
+.main_menu .menu05 .menu05_title {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu05_title.png');}
+.main_menu .menu06 .menu06_title {background-image:url('http://image.club5678.com/imgs/mobile/180305/menu06_title.png');}
+.main_menu .menu07 .menu07_title {background-image:url('http://image.club5678.com/imgs/mobile/171101/ico_menu03_title_re.png');}
+.main_menu .menu08 .menu08_title {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu08_title.png');}
+.main_menu .menu01_on .menu01_title_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu01_title_on.png');}
+.main_menu .menu02_on .menu02_title_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu02_title_on.png');}
+.main_menu .menu03_on .menu03_title_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu03_title_on.png');}
+.main_menu .menu04_on .menu04_title_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu04_title_on.png');}
+.main_menu .menu05_on .menu05_title_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu05_title_on.png');}
+.main_menu .menu06_on .menu06_title_on {background-image:url('http://image.club5678.com/imgs/mobile/180305/menu06_title_on.png');}
+.main_menu .menu07_on .menu07_title_on {background-image:url('http://image.club5678.com/imgs/mobile/171101/ico_menu03_title_on_re.png');}
+.main_menu .menu08_on .menu08_title_on {background-image:url('http://image.club5678.com/imgs/mobile/170417/menu08_title_on.png');}
+ /*-------------------------*/
+/*----------------------------------------------------------------*/
+/*==============================================================================*/
