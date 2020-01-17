@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Http\Data\BoardInterface;
 use Illuminate\Http\Request;
-use App\Http\Service\BoardService;
+
 class BoardController extends Controller
 {
     /**
@@ -25,7 +25,15 @@ class BoardController extends Controller
      */
     public function index(Request $req)
     {
-        $this->board->getRow("2");
+        echo "index";
+
+        //$data = $this->board->getRow("10");
+        //$return = array(
+//          "list" => $data
+  //      );
+
+        //return view("board/list", $return);
+
         //return view("welcome",[]);
     }
 
@@ -55,11 +63,19 @@ class BoardController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|string
      */
-    public function show($id)
+    public function show($id = null)
     {
-        //
+        $board = $this->board;
+
+        $data =$board->getData($id);
+
+        $return = array(
+            "list" => $data
+        );
+
+        return view("board/list", $return);
     }
 
     /**

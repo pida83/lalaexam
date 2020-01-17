@@ -3,38 +3,39 @@
 
 namespace App\Http\Service;
 
-use App\Board;
 use App\Http\Data\BoardInterface;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
 
 class BoardService implements BoardInterface
 {
     /**
-     * @var $board Model | Board | \Illuminate\Database\Query\Builder
+     * @var $board Model | \Illuminate\Database\Query\Builder :: 모델
      */
     protected $board;
 
-    public function __construct(Board $bd)
+    public function __construct(\App\DAO\Board $bd)
     {
+        // \App\DAO\Board 주입
         $this->board = $bd;
     }
 
-    public function getRow($id)
+    public function getRow($id, $boardType = "F")
     {
-        $result = $this->board->where("id",$id)->delete();
-        echo "LINE :: " . __LINE__ . "<br/>";
-        echo "FILE :: " . __FILE__ . "<br/>";
-        echo "METHOD :: " . __METHOD__ . "<br/>";
-        echo "<pre>";
-        var_dump($result);
-       echo "</pre>";
-       exit;
 
+        $result = $this->board->where("id",$id)->get();
+
+        return ($result->isNotEmpty())? $result : false;
     }
 
-    public function getAll($board)
+    public function getAll($boardType = "F")
     {
-    //    echo $board;
+        $result = $this->board->get();
+
+        return ($result->isNotEmpty())? $result : false;
+    }
+
+    public function getData($id = false, $boardType = "F")
+    {
+        return (!$id)? $this->getAll($boardType) : $this->getRow($id, $boardType);
     }
 }

@@ -27,6 +27,7 @@ Route::prefix('board')->group(function () {
         */
     });
     Route::get('/index',"BoardController@index");
+    Route::get('/show/{id?}',"BoardController@show");
 
     Route::get('/list/{page?}/{limit?}', function ($page = 0,$limit = 30) {
         $board = App\Board::paginate(15);
