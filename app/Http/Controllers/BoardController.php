@@ -1,20 +1,34 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Data\BoardInterface;
 use Illuminate\Http\Request;
-
+use App\Http\Service\BoardService;
 class BoardController extends Controller
 {
     /**
+     * @var $board BoardInterface
+     */
+    protected $board;
+
+    public function __construct(BoardInterface $bd)
+    {
+        // 서비스 주입?
+        $this->board = $bd;
+
+    }
+
+    /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|string
      */
-    public function index()
+    public function index(Request $req)
     {
-        //
+        $this->board->getRow("2");
+        //return view("welcome",[]);
     }
+
 
     /**
      * Show the form for creating a new resource.
