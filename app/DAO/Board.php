@@ -12,10 +12,16 @@ class Board extends Model
      * @var string
      */
     protected $table = 'board';
-    /**
-     * Indicates if the model should be timestamped.
-     *
-     * @var bool
-     */
-    public $timestamps = false;
+
+    protected $fillable = [
+        "contents",
+        "subject",
+        "email",
+        "user_seq",
+        "user_name",
+        "nick_name",
+        "user_id",
+        "visitor",
+        "created_at",
+    ];
 }

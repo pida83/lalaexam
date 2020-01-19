@@ -23,7 +23,7 @@
                 <td></td>
                 <td></td>
             </tr>
-            @endforeach;
+            @endforeach
         </tbody>
     </table>
     </body>
