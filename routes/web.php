@@ -11,12 +11,12 @@
 |
 */
 
+
 #require_once "web_route/route_admin.php";
 require_once "web_route/route_board.php";
 #require_once "web_route/photomeet.php";
 
-
 Route::get('/', function(){
-    view("welcome");
+    return redirect("/board/show");
 });
 

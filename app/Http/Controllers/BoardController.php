@@ -25,16 +25,7 @@ class BoardController extends Controller
      */
     public function index(Request $req)
     {
-        echo "index";
-
-        //$data = $this->board->getRow("10");
-        //$return = array(
-//          "list" => $data
-  //      );
-
-        //return view("board/list", $return);
-
-        //return view("welcome",[]);
+        return redirect("/board/show");
     }
 
 

@@ -22,7 +22,7 @@ class BoardService implements BoardInterface
     public function getRow($id, $boardType = "F")
     {
 
-        $result = $this->board->where("id",$id)->get();
+        $result = $this->board->where("seq",$id)->get();
 
         return ($result->isNotEmpty())? $result : false;
     }
