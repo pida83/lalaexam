@@ -1,19 +1,25 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Data\BoardInterface;
+
+//use App\Http\Data\BoardInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
+use \App\DAO\Board;
 
 class BoardController extends Controller
 {
     /**
-     * @var $board BoardInterface
+     * @var \App\DAO\Board |  \Illuminate\Database\Query\Builder  $board
      */
     protected $board;
 
-    public function __construct(BoardInterface $bd)
+    public function __construct(Board $bd)
     {
-        // 서비스 주입?
+        // 모델 주입
         $this->board = $bd;
 
     }
@@ -56,17 +62,34 @@ class BoardController extends Controller
      * @param  int  $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|string
      */
-    public function show($id = null)
+    public function show(Request $request, $id = null)
     {
         $board = $this->board;
+        $isAdmin = $request->session()->get("isAdmin");
 
-        $data =$board->getData($id);
+        //Log::info('is admin check show :: ', ["show" => session("isAdmin")]);
+        //Log::info('is admin check show :: ', ["admin" => $isAdmin]);
+        //Log::info('is admin check show :: ', ["var"=>var_export($board,true)]);
+        //log::info(__METHOD__,["list" => $boardList]);
+        $boardList =$board->getData($id);
 
         $return = array(
-            "list" => $data
+            "list" => $boardList,
+            "token" => csrf_token()
         );
 
-        return view("board/list", $return);
+
+
+
+        $twig = resolve('Twig');
+
+        try {
+            $template = $twig->load('/board/board.html');
+        } catch (LoaderError $e) {
+        } catch (RuntimeError $e) {
+        } catch (SyntaxError $e) {
+        }
+        return $template->render($return);
     }
 
     /**
@@ -101,5 +124,11 @@ class BoardController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getBoardList(){
+        $list = $this->board->getAll();
+        return json_encode($list);
+
     }
 }

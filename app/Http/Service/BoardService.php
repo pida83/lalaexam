@@ -17,6 +17,7 @@ class BoardService implements BoardInterface
     {
         // \App\DAO\Board 주입
         $this->board = $bd;
+
     }
 
     public function getRow($id, $boardType = "F")
@@ -29,8 +30,7 @@ class BoardService implements BoardInterface
 
     public function getAll($boardType = "F")
     {
-        $result = $this->board->get();
-
+        $result = $this->board->limit("10")->get();
         return ($result->isNotEmpty())? $result : false;
     }
 

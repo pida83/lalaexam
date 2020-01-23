@@ -1,34 +1,25 @@
 <?php
 
 use Illuminate\Http\Request;
-use bootstrap\Helpers\Helper;
-use \Twig\Loader\FilesystemLoader;
-use \Twig\Environment;
+use \App\DAO\Board;
+use Illuminate\Support\Facades\Log;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
 
+// /board/{} 로 들어오는 모든 url 을 처리
 Route::prefix('board')->group(function () {
 
-    Route::get('/', function () {
-        $loader = new FilesystemLoader(resource_path("templates"));
-        $twig = new Environment($loader, [
-            'debug' => true,
-            #'cache' => resource_path("templates")."/cache",
-            'cache' => false
-        ]);
+    //Log::info('is admin check show :: ', ["route" => session("isAdmin")]);
 
-        $template = $twig->load('/board/board.html');
-        $aList = array(
-            "b" => "b test",
-        );
+    Route::get('/','BoardController@show');
 
-        return $template->render($aList);
-        /*
-        //$loader = new \Twig\Loader\FilesystemLoader(resource_path("templates"));
-        return view("index");
-        */
-    });
     Route::get('/index',"BoardController@index");
-    Route::get('/show/{id?}',"BoardController@show");
 
+    Route::get('/show/{id?}',"BoardController@show");
+    Route::post('/ajax', "BoardController@getBoardList");
+
+/*
     Route::get('/list/{page?}/{limit?}', function ($page = 0,$limit = 30) {
         $board = App\Board::paginate(15);
 
@@ -79,7 +70,6 @@ Route::prefix('board')->group(function () {
 
         //$board = App\Conetents::find($id);
         //echo (empty($board))? "게시글이 없습니다." : " {$board->id} :: {$board->user_name} </br>";
-        */
     });
-
+*/
 });

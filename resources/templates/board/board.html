@@ -3,14 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="csrf-token" content="{{ token }}">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="/assets/test.js"></script>
-
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
 </head>
 <body>
+<div id="app">
+    ${ message }
+</div>
 
-    </br>
-{{a}} </br>
-{{b}}
+<div id="app-2">
+  <span v-bind:title="message">
+    내 위에 잠시 마우스를 올리면 동적으로 바인딩 된 title을 볼 수 있습니다!
+  </span>
+</div>
+
+<div id="app-3">
+    <p v-if="seen">이제 나를 볼 수 있어요</p>
+</div>
+
+<div id="app-4">
+    <ol>
+        <li v-for="list in lists">
+            ${ list.user_id }
+        </li>
+    </ol>
+</div>
+<div id="app-5">
+    <p>${ message }</p>
+    <button v-on:click="reverseMessage">메시지 뒤집기</button>
+</div>
+
+<div id="app-7">
+
+    <ol>
+        <!--
+          이제 각 todo-item 에 todo 객체를 제공합니다.
+          화면에 나오므로, 각 항목의 컨텐츠는 동적으로 바뀔 수 있습니다.
+          또한 각 구성 요소에 "키"를 제공해야합니다 (나중에 설명 됨).
+
+           ### 렌더링을 다시 할 때마다 항상 함수를 실행 ( 성능 문제 발생할 수 있음 )  ###
+         -->
+        <!--
+        <todo-item
+            v-for="item in groceryList"
+            v-bind:todo="item"
+            v-bind:key="item.seq"
+        ></todo-item>
+        -->
+    </ol>
+
+    <p>Using mustaches: ${ rawHtml }</p>
+    <p>Using v-html directive: <span v-html="rawHtml">test</span></p>
+    <div v-bind:id="dynamicId">id : dynamicID : #</div>
+    <a v-bind:href="dynamicId" v-bind:id="appId">href</a>
+    <button v-bind:disabled="isButtonDisabled">Button</button>
+    <p v-if="true">이제 나를 볼 수 있어요</p>
+    <a @click.prevent="getTest" v-bind:href="url"> test </a>
+    <button v-on="{ mousedown: doThis, mouseup: doThat }">this that</button>
+    <a v-bind:[ProPerty]="url">test  </a>
+    <div>${ getCompute }</div>
+    <div
+        v-on:click="getParams"
+        class="static"
+        v-bind:class="{ active: isActive, text_danger: hasError }"
+    > bind class</div>
+</div>
+
+<script src="/assets/test.js"></script>
+<script>
+    // define app4.todos from twig list by raw type
+    //app4.todos = {{list | raw }}; // twig to vue
+    app7.groceryList = {{list | raw }}; // twig to vue
+
+
+</script>
+
 </body>
 </html>
