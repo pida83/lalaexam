@@ -8,3 +8,7 @@ php artisan migrate:refresh --path="/database/migrations/2020_01_19_093506_creat
 ### seeding
 php artisan db:seed --class=BoardTableSeeder
 * * *
+
+### node server
+node /home/www/info/server.js
+* * *
