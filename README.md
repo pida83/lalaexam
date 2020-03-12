@@ -10,5 +10,5 @@ php artisan db:seed --class=BoardTableSeeder
 * * *
 
 ### node server
-node /home/www/info/server.js
+node /node_app/server.js
 * * *
