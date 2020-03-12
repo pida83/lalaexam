@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ token }}">
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col text-center">One of three columns</div>
+    </div>
+</div>
+
+<input type="hidden" id="uniq" name="uniqu" value="{{ uniqID }}"/>
+
+<div id="chat_contents" class="overflow-auto " style="height: 500px;">
+
+</div>
+
+<div class="media bg-light copy mb-1" style="display: none;">
+    <div class="mr-3" style="width: 64px; height: 64px; background : url({{ user_profile }}); background-repeat: no-repeat; background-size: cover; background-position: center center;  transform: rotate(90deg);"></div>
+    <div class="media-body">
+        <h5 class="mt-0">Media heading</h5>
+        <span class="msg_area">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</span>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row input-group mb-3">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="drop_down">Dropdown</button>
+<!-- 귓말을 보내려면? -->
+        <div class="dropdown-menu" id="userList">
+            <a class="dropdown-item" href="#">전체</a>
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <!--<div role="separator" class="dropdown-divider"></div>-->
+            <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+        <input type="text"  id="chatMsg"  class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon2">
+        <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2"  onclick="chatServer.messageSend($('#chatMsg'));" >입력</button>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="nickName" value="{{ nickName }}"/>
+<span><span class="badge badge-primary">꿀꿀이</span> aaa <br></span>
+<div>token :: {{ token }}</div>
+<div>feild :: {{ feild_token }}</div>
+<div>unique :: {{ nickName }}</div>
+<div><img src="{{ user_profile }}" alt="" class="rounded" id="" width="75px" height="75px" ></div>
+<input type="hidden" id="user_profile" value="{{ user_profile }}"/>
+
+
+<script>
+
+    // define app4.todos from twig list by raw type
+     //app4.lists = {*{ list | raw }*}; // twig to vue
+     var test = ""; {#{list | raw }#} // twig to vue
+
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="//io.homestead.test:3030/socket.io/socket.io.js"></script>
+<script src="/assets/client.chat.room.js"></script>
+</body>
+</html>

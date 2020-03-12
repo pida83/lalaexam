@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ token }}">
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row row-cols-1">
+        <div class="col text-center">One of three columns</div>
+    </div>
+    </br>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="user nick name" aria-label="user nick name" aria-describedby="button-addon2" id="user_nick_name">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="entranceChat.setNickName()">Button</button>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile02">
+            <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02" id="fileText">Choose file</label>
+        </div>
+        <div class="input-group-append">
+            <span class="input-group-text" onclick="fileStream.sendFile()">Upload</span>
+        </div>
+    </div>
+</div>
+<img src="" alt="" class="rounded" id="user_profile" width="75px" height="75px" style="display:none;">
+<div>token :: {{ token }}</div>
+<div>feild :: {{ feild_token }}</div>
+<div>unique :: {{ nickName }}</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="//io.homestead.test:3030/socket.io/socket.io.js"></script>
+<script src="/assets/socket.io-stream.js"></script>
+<script src="/assets/client.chat.member.js"></script>
+<script src="/assets/client.file.stream.js"></script>
+<script>
+    // define app4.todos from twig list by raw type
+     //app4.lists = {*{ list | raw }*}; // twig to vue
+     var test = ""; {#{list | raw }#} // twig to vue
+
+</script>
+
+</body>
+</html>
