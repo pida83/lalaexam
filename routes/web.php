@@ -13,10 +13,16 @@
 
 
 #require_once "web_route/route_admin.php";
+
+
+use Illuminate\Support\Facades\Route;
+
 require_once "web_route/route_board.php";
+require_once "web_route/route_chat.php";
 #require_once "web_route/photomeet.php";
 
 Route::get('/', function(){
-    return redirect("/board/show");
+    return redirect("/board");
 });
+
 
