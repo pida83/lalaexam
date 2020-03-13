@@ -18,11 +18,11 @@ module.exports = {
 };
 
 // 더 좋은 방법이 있을것 같기도 한데...
-let chat       = require(__dirname + "/module/server.chat.room.js")(io);
-let member     = require(__dirname + "/module/server.chat.member.js")(io);
-let admin      = require(__dirname + "/module/server.chat.admin.js")(io);
-let fileStream = require(__dirname + "/module/server.chat.file.stream.js")(io);
-let echoServer = require(__dirname + "/module/server.echo.js")(io);
+require(__dirname + "/module/server.chat.room.js")(io);
+require(__dirname + "/module/server.chat.member.js")(io);
+require(__dirname + "/module/server.chat.admin.js")(io);
+require(__dirname + "/module/server.chat.file.stream.js").init(io);
+require(__dirname + "/module/server.echo.js")(io);
 
 http.listen(3030,"192.168.10.10", function(){
     console.log('server on!');
